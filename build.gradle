@@ -17,3 +17,7 @@ repositories {
 dependencies {
     compile group: 'io.netty', name: 'netty-all', version: '4.1.37.Final'
 }
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
